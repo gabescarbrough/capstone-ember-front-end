@@ -5,5 +5,8 @@ export default Ember.Component.extend({
     deleteLink (link) {
       this.sendAction('deleteLink', link);
     },
+    createLink (link) {
+      this.sendAction('createLink', link);
+    },
   },
 });

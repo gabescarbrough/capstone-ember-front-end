@@ -9,5 +9,9 @@ export default Ember.Route.extend({
     deleteLink (link) {
       link.destroyRecord();
     },
+    createLink (data) {
+      let link = this.get('store').createRecord('link', data);
+      link.save();
+    },
   },
 });

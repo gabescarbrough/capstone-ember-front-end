@@ -1,0 +1,21 @@
+<form {{action 'createLink' on='submit'}}>
+  {{input placeholder='New link name'
+          class='input-group form-control'
+          value=newLink.name
+    }}
+
+  {{input placeholder='New link url'
+            class='input-group form-control'
+            value=newLink.url
+    }}
+
+  {{textarea placeholder='New link description'
+              class='input-group form-control'
+              value=newLink.description
+    }}
+
+  <button type="submit" name="submit" class="btn btn-primary">
+    Add New Link
+  </button>
+
+</form>
