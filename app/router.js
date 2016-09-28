@@ -11,6 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('collections');
+  this.route('collection', { path: '/collections/:collection_id' });
 });
 
 export default Router;
