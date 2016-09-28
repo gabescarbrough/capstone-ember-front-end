@@ -1,0 +1,13 @@
+<h2>{{collection.name}}</h2>
+<h4>By {{collection.user.email}}</h4>
+<p>{{collection.description}}</p>
+ <ul>
+   {{#each collection.links as |link|}}
+     <li>
+       <ul>
+         <li><a href="{{link.url}}" target="_blank">{{link.name}}</a></li>
+         <li>{{link.description}}</li>
+       </ul>
+     </li>
+   {{/each}}
+ </ul>
