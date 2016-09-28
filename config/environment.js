@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    apiHost: 'http://localhost:3000',
+    apiHost: 'http://localhost:3000/',
     modulePrefix: 'capstone-project',
     environment: environment,
     baseURL: '/',
@@ -41,7 +41,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/';
+    ENV.locationType = 'hash';
+    ENV.apiHost = 'https://dry-fortress-51268.herokuapp.com/';
   }
 
   return ENV;
