@@ -1,4 +1,7 @@
-<ul>
-  <li><a href="{{link.url}}" target="_blank">{{link.name}}</a></li>
-  <li>{{link.description}}</li>
-</ul>
+<h4><a href="{{link.url}}" target="_blank">{{link.name}}</a></h4>
+
+<p>{{link.description}}</p>
+
+<button class="btn btn-xs btn-danger" {{action 'delete'}}>
+   Delete
+</button>

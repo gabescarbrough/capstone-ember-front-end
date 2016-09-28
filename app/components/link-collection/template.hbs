@@ -1,10 +1,10 @@
 <h2>{{collection.name}}</h2>
 <h4>By {{collection.user.email}}</h4>
 <p>{{collection.description}}</p>
- <ul>
+
    {{#each collection.links as |link|}}
-     <li>
-       {{link-collection/link link=link}}
-     </li>
+
+       {{link-collection/link link=link
+                              delete='deleteLink'}}
+
    {{/each}}
- </ul>
