@@ -1,0 +1,16 @@
+<form {{action 'createCollection' on='submit'}}>
+  {{input placeholder='New collection name'
+          class='input-group form-control'
+          value=newCollection.name
+    }}
+
+  {{textarea placeholder='New collection description'
+              class='input-group form-control'
+              value=newCollection.description
+    }}
+
+  <button type="submit" name="submit" class="btn btn-primary">
+    Add New Collection
+  </button>
+
+</form>
