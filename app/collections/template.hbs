@@ -1,5 +1,5 @@
 {{#each model as |collection|}}
-  {{collection-card collection=collection delete='deleteCollection'}}
+  {{collection-card collection=collection delete='deleteCollection' edit='editCollection'}}
 {{/each}}
 
 {{new-collection-form createCollection='createCollection' collection=collection}}

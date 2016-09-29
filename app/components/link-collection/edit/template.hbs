@@ -1,0 +1,16 @@
+<form {{action 'save' on='submit'}}>
+  {{input placeholder='Edit collection name'
+          class='input-group form-control'
+          value=editCollection.name
+    }}
+
+  {{textarea placeholder='Edit collection description'
+              class='input-group form-control'
+              value=editCollection.description
+    }}
+
+  <button type="submit" name="submit" class="btn btn-primary">
+    Edit Collection
+  </button>
+
+</form>

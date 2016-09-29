@@ -6,12 +6,14 @@ export default Ember.Route.extend({
   },
   actions: {
     deleteCollection(collection) {
-      console.log('Hit collections route', collection);
       collection.destroyRecord();
     },
     createCollection (data) {
       let collection = this.get('store').createRecord('collection', data);
       collection.save();
+    },
+    editCollection (collection) {
+      this.transitionTo('collection/edit', collection);
     },
   },
 });
