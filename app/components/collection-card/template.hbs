@@ -1,3 +1,7 @@
 {{#link-to 'collection' collection}}<h2>{{collection.name}}</h2>{{/link-to}}
 <h4>By {{collection.user.email}}</h4>
 <p>{{collection.description}}</p>
+
+<button class="btn btn-xs btn-danger" {{action 'delete'}}>
+   Delete
+</button>
