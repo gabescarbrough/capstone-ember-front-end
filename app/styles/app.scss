@@ -1,2 +1,66 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+body {
+  background-color: hsl(167, 24%, 94%);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0 !important;
+}
+
+.collection-card {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(170, 170, 230, 1);
+    background: -webkit-linear-gradient(top, rgba(167, 209, 179, 1) 0%, rgba(170, 170, 230, 1) 100%);
+    background: linear-gradient(to bottom, rgba(167, 209, 179, 1) 0%, rgba(170, 170, 230, 1) 100%);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(167, 209, 179, 1);
+    background: -webkit-linear-gradient(top, rgba(170, 170, 230, 1) 0%, rgba(167, 209, 179, 1) 100%);
+    background: linear-gradient(to bottom, rgba(170, 170, 230, 1) 0%, rgba(167, 209, 179, 1) 100%);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #a7d1b3;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #a7d1b3;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a7d1b3;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #aaaae6;
+}

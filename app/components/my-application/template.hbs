@@ -1,11 +1,9 @@
-<nav class="navbar navbar-default">
+<nav id="custom-bootstrap-menu" class="navbar navbar-default">
   <div class="container-fluid">
     {{navbar-header}}
-
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
         <li>{{#link-to "collections"}}Collections{{/link-to}}</li>
         {{/if}}
       </ul>
